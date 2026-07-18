@@ -111,3 +111,10 @@ def compute_daily_gamma_capture(
     t_session = n_minutes / float(minutes_per_day)
     sigma_gc_daily = b_day * np.sqrt(n_daily) * np.sqrt(trading_days_per_year / t_session)
     return sigma_gc_daily
+
+if __name__ == "__main__":
+    print("gc_daily.py is a library module and does not run a default workflow by itself.")
+    print("\nUse one of the following:")
+    print("1) Run the real-data demo:")
+    print("   python examples/spy_yahoo_1m_example.py")
+    print("2) Import and call compute_daily_gamma_capture(...) from your own script/notebook.")
